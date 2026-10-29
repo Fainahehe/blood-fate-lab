@@ -1,21 +1,6 @@
 # Blood Fate Lab
 
-An educational research baseline for predicting the **observed day-6 neutrophil fraction among neutrophils plus monocytes within a clone**, using that clone's day-2 RNA expression. Mouse progenitor data, not human therapy predictions. No novelty or intervention-effect claims.
-
-## Quick start (Windows / VS Code)
-
-Install Python 3.11 or 3.12. Open this folder in VS Code. In PowerShell:
-
-```powershell
-py -3.11 -m venv .venv
-.\.venv\Scripts\python -m pip install -r requirements.txt
-.\.venv\Scripts\python train.py --download --audit-only
-.\.venv\Scripts\python train.py
-.\.venv\Scripts\python -m unittest -v
-```
-
-Mac/Linux: use `python3 -m venv .venv`, then `.venv/bin/python` instead.
-The expression download alone is about 2.1 GB compressed; allow several GB of free disk space and RAM. The loader streams the file and retains only early expression. Downloads may be large and need a working internet connection. Existing files are reused; failed partial downloads are discarded. Never add data or generated models to GitHub. The script does not run CoSpar or require a GPU.
+An educational research baseline for predicting the **observed day-6 neutrophil fraction among neutrophils plus monocytes within a clone**, using that clone's day-2 RNA expression. Using mouse progenitor data.
 
 ## What happens
 
